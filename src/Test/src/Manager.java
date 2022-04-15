@@ -1,9 +1,8 @@
-package kg.itschool.crm.model;
+package Test.src;
 
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 
-public final class Mentor extends BaseEntity {
+public class Manager extends BaseEntity {
 
     private String firstName;
     private String lastName;
@@ -12,11 +11,10 @@ public final class Mentor extends BaseEntity {
     private LocalDate dob;
     private Double salary;
 
-    public Mentor() {
-        super();
+    public Manager() {
     }
 
-    public Mentor(Long id, String firstName, String lastName, String phoneNumber, String email, LocalDate dob, Double salary) {
+    public Manager(Long id, String firstName, String lastName, String phoneNumber, String email, LocalDate dob, Double salary) {
         super(id);
         this.firstName = firstName;
         this.lastName = lastName;
@@ -24,6 +22,9 @@ public final class Mentor extends BaseEntity {
         this.email = email;
         this.dob = dob;
         this.salary = salary;
+    }
+
+    public Manager(String firstName, String lastName, String phoneNumber, String email, LocalDate dob, Double salary) {
     }
 
     public String getFirstName() {
@@ -76,7 +77,7 @@ public final class Mentor extends BaseEntity {
 
     @Override
     public String toString() {
-        return "Mentor{" +
+        return "Manager{" +
                 "id=" + id +
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +

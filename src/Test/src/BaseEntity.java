@@ -1,8 +1,8 @@
-package kg.itschool.crm.model;
+package Test.src;
 
 import java.time.LocalDateTime;
 
-abstract class BaseEntity {
+public class BaseEntity {
 
     protected Long id;
     protected LocalDateTime dateCreated;
